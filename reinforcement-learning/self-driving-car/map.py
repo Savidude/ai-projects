@@ -28,11 +28,12 @@ last_y = 0
 n_points = 0
 length = 0
 
-# Getting our AI, which we call "brain", and that contains our neural network that represents our Q-function
-brain = Dqn(input_size=5, nb_action=3, gamma=0.9)
 action2rotation = [0, 20, -20]
 last_reward = 0
 scores = []
+
+# Getting our AI, which we call "brain", and that contains our neural network that represents our Q-function
+brain = Dqn(input_size=5, nb_action=len(action2rotation), gamma=0.9)
 
 # Initializing the map
 first_update = True
