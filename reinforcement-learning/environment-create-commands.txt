@@ -7,3 +7,9 @@ python /Users/savidudias/opt/anaconda3/envs/aiTest/bin/python /Users/savidudias/
 
 # Doom environment commands
 conda install -c conda-forge gym
+
+# Breakout environment commands
+conda install -c pytorch pytorch
+conda install -c akode gym
+conda install -c menpo ffmpeg
+conda install -c conda-forge opencv
