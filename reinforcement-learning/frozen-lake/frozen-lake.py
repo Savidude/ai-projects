@@ -8,6 +8,15 @@ from IPython.display import HTML
 # create environment
 env = gym.make("FrozenLake-v0")
 
+# Get Frozen Lake  environment that is deterministic
+# from gym.envs.registration import register
+# register(
+#     id='FrozenLakeNotSlippery-v0',
+#     entry_point='gym.envs.toy_text:FrozenLakeEnv',
+#     kwargs={'map_name' : '4x4', 'is_slippery': False},
+# )
+# env = gym.make('FrozenLakeNotSlippery-v0')
+
 # create a Q-table
 action_size = env.action_space.n # number of actions
 state_size = env.observation_space.n # number of states
